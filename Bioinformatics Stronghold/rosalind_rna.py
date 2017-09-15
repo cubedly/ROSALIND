@@ -3,6 +3,7 @@ f = open ('read.txt', 'r')
 dna = f.read()
 f.close()
 
+#Solution 1:
 rna = []
 
 for dntp in dna:
@@ -14,3 +15,6 @@ for dntp in dna:
 rnastr = ''.join(rna) #Convert a list to a string
 
 print rnastr
+
+#Alternate solution using .replace
+print dna.replace ('T', 'U')
